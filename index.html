@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <style>
       body {
@@ -31,10 +34,39 @@
         color: black;
 
       }
+      @keyframes motionbla {
+        0% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(180deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+        
+      }
+      #kb {
+        scale: -1;
+      }
+      .motion {
+        display: grid;
+        place-items: center ;
+        animation: motionbla infinite 5s;
+      }
     </style>
   </head>
   <body>
+    <div class="motion">
+        <p>Coding makes fun!</p>
+        <p class="emo">👨‍💻</p>
+        <p id="kb">Enjoy your Keyboard</p>
+
+
+    </div>
     <h1>Technologies</h1>
+    
+
     <ul>
        <ol id="info-box">
         <li><h2>HTML</h2></li>
@@ -56,5 +88,8 @@
       </ol>
       </li>
     </ul>
+
+
+
   </body>
 </html>
